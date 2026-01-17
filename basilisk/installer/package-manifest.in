@@ -50,9 +50,7 @@
 @RESPATH@/chrome/@AB_CD@@JAREXT@
 @RESPATH@/chrome/@AB_CD@.manifest
 @RESPATH@/dictionaries/*
-#if defined(XP_WIN) || defined(MOZ_WIDGET_GTK)
 @RESPATH@/fonts/*
-#endif
 @RESPATH@/hyphenation/*
 @RESPATH@/browser/@PREF_DIR@/firefox-l10n.js
 #ifdef HAVE_MAKENSISU
@@ -182,7 +180,7 @@
 @RESPATH@/components/composer.xpt
 @RESPATH@/components/content_events.xpt
 @RESPATH@/components/content_html.xpt
-@RESPATH@/components/content_geckomediaplugins.xpt
+;@RESPATH@/components/content_geckomediaplugins.xpt
 #ifdef MOZ_WEBRTC
 @RESPATH@/components/content_webrtc.xpt
 #endif
