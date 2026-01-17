@@ -1,6 +1,3 @@
-[submodule "thirdparty/libcxx-static"]
-	path = thirdparty/libcxx-static
-	url = https://github.com/llvm/llvm-project.git
 [submodule "platform"]
 	path = platform
 	url = https://Jazzzny@github.com/Jazzzny/platform-uxp.git

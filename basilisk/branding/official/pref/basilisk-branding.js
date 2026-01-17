@@ -6,44 +6,35 @@
 #filter emptyLines
 
 // Set defines to construct URLs
-#define BRANDING_BASEURL basilisk-browser.org
-#define BRANDING_SITEURL www.@BRANDING_BASEURL@
-#define BRANDING_RELNOTESPATH releasenotes.html
-#define BRANDING_FIRSTRUNPATH firstrun/
-#define BRANDING_APPUPDATEURL aus.@BRANDING_BASEURL@
-#define BRANDING_APPUPDATEPATH ?application=%PRODUCT%&version=%VERSION%&arch=%BUILD_TARGET%&flavor=%BUILD_SPECIAL%&toolkit=%WIDGET_TOOLKIT%&buildid=%BUILD_ID%&channel=%CHANNEL%
+#define BRANDING_BASEURL powerfox.jazzzny.me
+#define BRANDING_SITEURL @BRANDING_BASEURL@
 
 // Shared Branding Preferences
 // XXX: These should REALLY go back to application preferences
 #include ../../shared/preferences.inc
 
 // Branding Specific Preferences
-pref("startup.homepage_override_url", "https://@BRANDING_SITEURL@/@BRANDING_RELNOTESPATH@");
-pref("startup.homepage_welcome_url", "http://@BRANDING_SITEURL@/@BRANDING_FIRSTRUNPATH@");
+pref("startup.homepage_override_url", "");
+pref("startup.homepage_welcome_url", "powerfox.jazzzny.me/welcome.html");
 pref("startup.homepage_welcome_url.additional", "");
 
 // Version release notes
-pref("app.releaseNotesURL", "http://@BRANDING_SITEURL@/@BRANDING_RELNOTESPATH@");
+pref("app.releaseNotesURL", "about:blank");
 
 // Vendor home page
-pref("app.vendorURL", "http://@BRANDING_SITEURL@/");
+pref("app.vendorURL", "powerfox.jazzzny.me");
 
-pref("app.update.url", "https://@BRANDING_APPUPDATEURL@/@BRANDING_APPUPDATEPATH@");
+pref("app.update.url", "");
 
 // URL user can browse to manually if for some reason all update installation
 // attempts fail.
-pref("app.update.url.manual", "https://@BRANDING_SITEURL@/");
+pref("app.update.url.manual", "about:");
 // A default value for the "More information about this update" link
 // supplied in the "An update is available" page of the update wizard.
-pref("app.update.url.details", "https://@BRANDING_SITEURL@/@BRANDING_RELNOTESPATH@");
+pref("app.update.url.details", "about:");
 
-// Provide UA Gecko and Firefox slices for web compatibility
-pref("general.useragent.compatMode.firefox",true);
-pref("general.useragent.compatMode.gecko",true);
-pref("general.useragent.compatMode.version", "128.0");
+// Switch Application Updates off for unofficial branding
+pref("app.update.enabled", false);
 
 // Shared User Agent Overrides
 #include ../../shared/uaoverrides.inc
-
-// Geolocation
-pref("geo.wifi.uri", "https://pro.ip-api.com/json/?fields=lat,lon,status,message&key=jyVzd1rYPdkQCPC");

@@ -2,9 +2,9 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY  brandShorterName      "Basilisk">
-<!ENTITY  brandShortName        "Basilisk">
-<!ENTITY  brandFullName         "Basilisk">
-<!ENTITY  vendorShortName       "Basilisk-Dev">
-<!ENTITY  vendorFullName        "Basilisk-Dev">
-<!ENTITY  trademarkInfo.part1   "Basilisk, Basilisk Browser and the Basilisk logos are trademarks of the Basilisk Development Team.">
+<!ENTITY  brandShorterName      "PowerFox">
+<!ENTITY  brandShortName        "PowerFox">
+<!ENTITY  brandFullName         "PowerFox">
+<!ENTITY  vendorShortName       "PowerFox">
+<!ENTITY  vendorFullName        "PowerFox">
+<!ENTITY  trademarkInfo.part1   " ">
