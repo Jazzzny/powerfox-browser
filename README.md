@@ -4,5 +4,19 @@ PowerFox is a secure, modern, and open-source web browser for Mac OS X 10.6 Snow
 
 For more information, visit the [PowerFox website](https://powerfox.jazzzny.me).
 
+## Installation
+Download the latest release from the [Releases](https://github.com/Jazzzny/powerfox-browser/releases) section on GitHub.
+
 ## Credits
 PowerFox wouldn't be possible without the Basilisk and UXP teams for their incredible work on the underlying browser code, TenFourFox for various parts of legacy Mac OS X support code, and many UXP contributors who have worked on the Mac code, including but not limited to dbsoft and WolfReiser. Thank you!
+
+## Building
+To build PowerFox, first download the Git repo using:
+
+```git clone --recursive https://github.com/Jazzzny/powerfox-browser```
+
+Then change to the `powerfox-browser` directory and run:
+
+```./mach build```
+
+The build will start.
