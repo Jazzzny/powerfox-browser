@@ -22,6 +22,7 @@ FINAL_TARGET_FILES['internal-userscripts'] += [
     'bundled-scripts/imagedecode-polyfill.user.js',
     'bundled-scripts/intl-displaynames-polyfill.user.js',
     'bundled-scripts/intl-listformat-polyfill.user.js',
+    'bundled-scripts/intl-relativetimeformat-formattoparts-polyfill.user.js',
     'bundled-scripts/intl-segmenter-polyfill.user.js',
     'bundled-scripts/readablestream-pipethrough-polyfill.user.js',
     'bundled-scripts/readablestream-pipeto-polyfill.user.js',

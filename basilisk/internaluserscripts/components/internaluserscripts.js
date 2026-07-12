@@ -139,6 +139,20 @@ InternalUserscriptsService.prototype = {
 
     try {
       Services.scriptloader.loadSubScript(
+        "chrome://internaluserscripts/content/bundled-scripts/intl-relativetimeformat-formattoparts-polyfill.user.js",
+        contentWin,
+      );
+      if (
+        contentWin.__internalUserscriptsIntlRelativeTimeFormatFormatToPartsPolyfill
+      ) {
+        logPolyfill("Intl.RelativeTimeFormat.formatToParts", "bundled");
+      }
+    } catch (e) {
+      // ignore
+    }
+
+    try {
+      Services.scriptloader.loadSubScript(
         "chrome://internaluserscripts/content/bundled-scripts/intl-segmenter-polyfill.user.js",
         contentWin,
       );
