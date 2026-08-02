@@ -3,8 +3,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #aboutDialogContainer {
-  background-color: #fafafa;
-  color: #1d1d1f;
+  background-image: url("chrome://branding/content/about-background.png");
+  background-position: center center;
+  background-size: 102% auto; /* line at right side of dialog otherwise visible */
+  color: #ffffff;
 }
 
 #clientBox {
@@ -12,7 +14,7 @@
 }
 
 #leftBox {
-  background-image: url("chrome://branding/content/about-logo.png");
+  background-image: url("chrome://branding/content/about-logo-bloom.png");
   background-repeat: no-repeat;
   background-size: 192px auto;
   background-position: center 20%;
@@ -23,14 +25,8 @@
   margin-inline-start: 30px;
 }
 
-@media (min-resolution: 2dppx) {
-  #leftBox {
-    background-image: url("chrome://branding/content/about-logo@2x.png");
-  }
-}
-
 .text-link {
-  color: #1d1d1f !important;
+  color: #ffffff !important;
   text-decoration: underline;
 }
 
