@@ -6,7 +6,7 @@
 #filter emptyLines
 
 // Set defines to construct URLs
-#define BRANDING_BASEURL powerfox.jazzzny.me
+#define BRANDING_BASEURL powerfox.org
 #define BRANDING_SITEURL @BRANDING_BASEURL@
 #define POWERFOX_UPDATER_BASEURL https://powerfox-updater.jazzzny.me
 
@@ -16,14 +16,14 @@
 
 // Branding Specific Preferences
 pref("startup.homepage_override_url", "");
-pref("startup.homepage_welcome_url", "powerfox.jazzzny.me/welcome.html");
+pref("startup.homepage_welcome_url", "https://powerfox.org/welcome.html");
 pref("startup.homepage_welcome_url.additional", "");
 
 // Version release notes
 pref("app.releaseNotesURL", "@POWERFOX_UPDATER_BASEURL@/releases/latest");
 
 // Vendor home page
-pref("app.vendorURL", "powerfox.jazzzny.me");
+pref("app.vendorURL", "https://powerfox.org");
 
 pref("app.update.url", "@POWERFOX_UPDATER_BASEURL@/update/6/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml");
 
