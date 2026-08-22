@@ -9,5 +9,6 @@ FINAL_TARGET = 'dist/bin/distribution'
 
 FINAL_TARGET_FILES.extensions += [
     'extensions/jid1-TSgSxBhncsPBWQ@jetpack.xpi',
+    'extensions/privelem@adoxa.xpi',
     'extensions/uBlock0@raymondhill.net.xpi',
 ]
