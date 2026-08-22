@@ -1,0 +1,13 @@
+# -*- Mode: python; indent-tabs-mode: nil; tab-width: 40 -*-
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# Distribution add-ons are copied into new profiles on first run. Keep each
+# XPI's filename identical to the add-on ID declared in its install.rdf.
+FINAL_TARGET = 'dist/bin/distribution'
+
+FINAL_TARGET_FILES.extensions += [
+    'extensions/jid1-TSgSxBhncsPBWQ@jetpack.xpi',
+    'extensions/uBlock0@raymondhill.net.xpi',
+]
