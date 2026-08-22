@@ -55,9 +55,8 @@
 .tab-background-middle {
   -moz-box-flex: 1;
   background-clip: padding-box;
-  /* Deliberately create a 1px overlap left/right to cover rounding gaps */
-  border-left: calc(@tabCurveHalfWidth@ - 1px) solid transparent;
-  border-right: calc(@tabCurveHalfWidth@ - 1px) solid transparent;
+  border-left: @tabCurveHalfWidth@ solid transparent;
+  border-right: @tabCurveHalfWidth@ solid transparent;
   margin: 0 -@tabCurveHalfWidth@;
 }
 
