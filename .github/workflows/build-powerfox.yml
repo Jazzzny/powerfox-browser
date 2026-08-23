@@ -206,8 +206,8 @@ jobs:
 
           FFMPEG_DIR="$FFMPEG_TMP/${{ matrix.ffmpeg_asset }}"
           FFMPEG_DIR="${FFMPEG_DIR%.zip}"
-          cp -p "$FFMPEG_DIR/libavcodec.60.dylib" "$APP_PATH/Contents/MacOS/"
-          cp -p "$FFMPEG_DIR/libavutil.58.dylib" "$APP_PATH/Contents/MacOS/"
+          cp -p "$FFMPEG_DIR/libavcodec.61.dylib" "$APP_PATH/Contents/MacOS/"
+          cp -p "$FFMPEG_DIR/libavutil.59.dylib" "$APP_PATH/Contents/MacOS/"
 
       - name: Fix Snow Leopard libc++ paths
         if: matrix.os == '10.6'
