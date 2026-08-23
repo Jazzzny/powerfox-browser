@@ -30,6 +30,36 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - os: "10.3"
+            config: g3
+            target: powerpc
+            artifact_suffix: 10.3-g3
+            app_name: PowerFox.app
+            ffmpeg_asset: 10.3-G3.zip
+          - os: "10.3"
+            config: g4
+            target: powerpc
+            artifact_suffix: 10.3-g4-7400
+            app_name: PowerFox.app
+            ffmpeg_asset: 10.3-G4-7400.zip
+          - os: "10.3"
+            config: g4e
+            target: powerpc
+            artifact_suffix: 10.3-g4-7450
+            app_name: PowerFox.app
+            ffmpeg_asset: 10.3-G4-7450.zip
+          - os: "10.3"
+            config: g5
+            target: powerpc
+            artifact_suffix: 10.3-g5
+            app_name: PowerFox.app
+            ffmpeg_asset: 10.3-G5.zip
+          - os: "10.3"
+            config: debug
+            target: powerpc
+            artifact_suffix: 10.3-debug
+            app_name: PowerFoxDebug.app
+            ffmpeg_asset: 10.3-G3.zip
           - os: "10.4"
             config: g3
             target: powerpc
@@ -122,9 +152,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
         run: |
-          gh release download 3.0 -p "powerfox-sdk-3.0.zip" --repo Jazzzny/powerfox-sdk
+          gh release download 4.0 -p "powerfox-sdk-4.0.zip" --repo Jazzzny/powerfox-sdk
           sudo mkdir -p /opt/
-          sudo unzip -q powerfox-sdk-3.0.zip -d /opt
+          sudo unzip -q powerfox-sdk-4.0.zip -d /opt
 
       - name: Install dependencies
         run: brew install yasm nasm
@@ -168,7 +198,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
         run: |
           APP_PATH="powerfox-browser/obj-${{ matrix.target }}-apple-darwin/dist/powerfox/${{ matrix.app_name }}"
-          gh release download ffmpeg-6.1.6 -p "${{ matrix.ffmpeg_asset }}" --repo Jazzzny/powerfox-ffmpeg-enabler
+          gh release download ffmpeg-7.1.5 -p "${{ matrix.ffmpeg_asset }}" --repo Jazzzny/powerfox-ffmpeg-enabler
           FFMPEG_TMP="${RUNNER_TEMP}/powerfox-ffmpeg-${{ matrix.artifact_suffix }}"
           rm -rf "$FFMPEG_TMP"
           mkdir -p "$FFMPEG_TMP"
