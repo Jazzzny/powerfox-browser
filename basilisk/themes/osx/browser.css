@@ -233,7 +233,9 @@
     position: relative;
     z-index: 1;
   }
+}
 
+@media (-moz-mac-yosemite-theme) {
   #main-window[tabsintitlebar] #TabsToolbar:not([collapsed="true"]) + #nav-bar:-moz-window-inactive:not(:-moz-lwtheme) {
     border-top-color: hsla(0,0%,0%,.05);
   }
