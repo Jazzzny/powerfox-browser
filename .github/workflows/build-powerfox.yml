@@ -152,9 +152,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
         run: |
-          gh release download 4.0 -p "powerfox-sdk-4.0.zip" --repo Jazzzny/powerfox-sdk
+          gh release download 4.1 -p "powerfox-sdk-4.1.zip" --repo Jazzzny/powerfox-sdk
           sudo mkdir -p /opt/
-          sudo unzip -q powerfox-sdk-4.0.zip -d /opt
+          sudo unzip -q powerfox-sdk-4.1.zip -d /opt
 
       - name: Install dependencies
         run: brew install yasm nasm
