@@ -51,7 +51,7 @@ var gPowerFoxPane = {
                     null, params);
   },
 
-  
+
   // We have to invert the sense for the pdfjs.disabled pref, since true equals DISabled.
 
   readPDFjs: function ()
@@ -64,7 +64,7 @@ var gPowerFoxPane = {
     var nupref = document.getElementById("pdfJsCheckbox");
     return (!(nupref.checked));
   },
-  
+
   // Find and set the appropriate UA string based on the UA template.
   // Keep in sync with powerfox-ssua.xul and powerfox.xul
   validUA : {
@@ -77,7 +77,8 @@ var gPowerFoxPane = {
       "fx115" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:115.0) Gecko/20100101 Firefox/115.0",
       "fx128" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0",
       "ipad" : "Mozilla/5.0 (iPad; CPU OS 18_7_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1",
-      "iphone" : "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1"
+      "iphone" : "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1",
+      "kaios4" : "Mozilla/5.0 (Mobile; rv:123.0) Gecko/123.0 Firefox/123.0 KAIOS/4.0"
   },
   readUA: function ()
   {
@@ -103,5 +104,5 @@ var gPowerFoxPane = {
       Services.prefs.clearUserPref(GLOBAL_UA_PREF);
     }
     return "";
-  }, 
+  },
 };

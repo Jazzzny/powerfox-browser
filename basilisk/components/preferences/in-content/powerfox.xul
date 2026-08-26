@@ -91,6 +91,7 @@
               <menuitem label="Firefox 52ESR (Intel)" value="fx"/>
               <menuitem label="iPad Safari" value="ipad"/>
               <menuitem label="iPhone Safari" value="iphone"/>
+              <menuitem label="KaiOS 4" value="kaios4"/>
           </menupopup>
       </menulist>
       <spacer flex="1"/>
