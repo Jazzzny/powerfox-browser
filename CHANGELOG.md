@@ -8,7 +8,7 @@
 * Implemented GPU accelerated H264 decoding on 10.6 builds
 * Implemented further SSE and AltiVec optimizations in H264, VP8, and VP9 decoders on all builds
 * Implemented font sanitizer in 10.4 and 10.5 builds to load previously unsupported fonts and prevent crashes
-* Implemented built-in uBlock Origin and h264ify extensions for new profiles. Thank you to UCyborg, uBlock Origin developers, WindClan, and h264ify developers for their contributions
+* Implemented built-in uBlock Origin and h264ify extensions. Thank you to UCyborg, uBlock Origin developers, WindClan, and h264ify developers for their contributions
 * Implemented refreshed browser about page
 * Implemented KaiOS user agent option in PowerFox settings tab
 * Fixed OpenGL acceleration for GeForce FX series GPUs
