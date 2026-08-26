@@ -7,8 +7,9 @@ PowerFox is a secure, modern, and open-source web browser for Mac OS X 10.6 Snow
 For more information, visit the [PowerFox website](https://powerfox.jazzzny.me).
 
 ## Technical details
-As a browser based on the UXP/Goanna platform, PowerFox offers broad compatibility with the modern web while retaining support for legacy technologies such as plugins and XUL addons, complemented with numerous changes to improve the browsing experience on 10.3-10.6.
-Notable PowerFox features include:
+PowerFox offers broad compatibility with the modern web through the UXP/Goanna platform while retaining support for legacy technologies such as plugins and XUL addons, complemented with numerous changes to improve the browsing experience on 10.3-10.6.
+
+Notable features include (but are not limited to):
 - Modern HTML, CSS, and JavaScript compatibility
 - IonPower JavaScript JIT for PowerPC and Intel JavaScript JIT
 - Skia graphics backend with OpenGL acceleration for 10.4+
