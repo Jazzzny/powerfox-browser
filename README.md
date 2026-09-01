@@ -9,6 +9,8 @@ For more information, visit the [PowerFox website](https://powerfox.jazzzny.me).
 ## Looking for PowerFox?
 PowerFox Classic was formerly named PowerFox. The new PowerFox, based on Firefox 153 ESR and compatible with Mac OS X 10.7-macOS 10.14, is available from https://github.com/Jazzzny/powerfox.
 
+PowerFox Classic will continue to receive regular updates.
+
 ## Technical details
 PowerFox Classic offers broad compatibility with the modern web through the UXP/Goanna platform while retaining support for legacy technologies such as plugins and XUL addons, complemented with numerous changes to improve the browsing experience on 10.3-10.6.
 
